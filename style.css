@@ -85,18 +85,23 @@ html
   }
 .home_fles{
   display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+
 }
 
 .font_size{
     font-size: large;
 }
+@media screen {
+  .home_fles{
+    min-width: 500px;
+  }
+  
+}
 
 .hometext{
-  padding: 7em;
-}
-.home_p{
-  
-  width: 60%;
+  padding: 4em;
 }
 .expertise_section
 {
