@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .body{
   position: sticky;
   padding: 0%;
@@ -10,44 +11,96 @@ html
 .home{
   color:rgb(144,85,162);
 }
-.nav-bar{
-    position: fixed;
+nav{
+  position: fixed;
+  background-color: white;
+  height: 70px;
+  width: 100%;
+}
+nav .logo{
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0 100px;
+  line-height: 75px;
+}
+nav ul{
+  margin: 0%;
+  float: right;
     display: block;
     display: inline-block;
-    background-color:white;
-    width: 100%;
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
     text-align: center;
-    white-space: normal;
 }
-.nav-bar li{
+nav ul li{
     display: inline-block;
-    min-width:15em;
-    margin: 1.5em 0.3em;
-}    
-.nav-bar a {
+    line-height: 30px;
+}  
+nav a {
+  color: black;
   font-weight: bold;
     text-decoration: none;
-    display: block;̌̌
+    display: block;
+    margin-top: 1em;
     font-family:Arial;
+    padding: 0 1em 0 1em;
     position: relative;
-    padding: 0.5em 0;
+    
   }
+#checkbtn{
+  float: right;
+  line-height: 70px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: black;
+  display: none;
+}
+#check{
+  display: none;
+}
+#check:checked~ul{
+  top: 70px;
+  left: 0%;
+  
+}
+@media(max-width: 1300px){
+  #checkbtn{
+    display: block;
+  }
+  nav ul{
+    width: 100%;
+    padding: 2%;
+    height: fit-content;
+    background-color: white;
+    position: fixed;
+    top: -100%;
+    left: 0%;
+    transition: 1s;
+  }
+  nav ul li{
+    
+    display: block;
+    text-align: left;
+    margin-left: 60px;
+    line-height: 35px;
+  }
+  nav ul li a{
+    width: fit-content;
+  }
+}
 
 .header_text{
   color: black;
 }
-  .nav-bar a:hover {
+  nav a:hover {
     color:rgb(144,85,162);
   }
 
-  .nav-bar a:hover:before {
+  nav a:hover:before {
     left: 0;
     width: 100%;
   }
-  .nav-bar a:before {
+  nav a:before {
     content: "";
     position: absolute;
     width: 0;
@@ -83,26 +136,32 @@ html
   .bgcolor{
     background-color: rgb(240, 238, 240);
   }
-
-
+  
 .home_fles{
-  border-top: 20px;
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
-
 }
-
 .font_size{
     font-size: large;
 }
 .home_image{
-  width: 500px;
+  
 }
 .hometext{
-  padding: 4em;
+  padding: 7em;
 }
-
+.home_p{
+  width: 60%;
+}
+@media screen and (max-width:780px) {
+  .hometext{
+    padding: 7em;
+  }
+  .home_fles{
+    display: flex;
+    flex-direction: column;
+  } 
+}
 .expertise_section
 {
   display: flex;
