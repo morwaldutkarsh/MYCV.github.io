@@ -64,7 +64,7 @@ html
   text-transform: uppercase;
 }
 .headngs{
- 
+  border-bottom: solid  rgb(193, 149, 193);
   width: fit-content;
   color: purple;
   font-size: 40px;
@@ -83,7 +83,10 @@ html
   .bgcolor{
     background-color: rgb(240, 238, 240);
   }
+
+
 .home_fles{
+  border-top: 20px;
   display: flex;
   flex-direction: row;
   padding-top: 50px;
@@ -93,16 +96,13 @@ html
 .font_size{
     font-size: large;
 }
-@media screen {
-  .home_fles{
-    min-width: 500px;
-  }
-  
+.home_image{
+  width: 500px;
 }
-
 .hometext{
   padding: 4em;
 }
+
 .expertise_section
 {
   display: flex;
