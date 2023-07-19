@@ -64,6 +64,8 @@ html
   text-transform: uppercase;
 }
 .headngs{
+  border-bottom: solid red;
+  width: fit-content;
   color: purple;
   font-size: 40px;
   text-transform: uppercase;
