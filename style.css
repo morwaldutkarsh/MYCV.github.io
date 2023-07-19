@@ -8,13 +8,13 @@ html
   transition: 2s;
 }
 .home{
-  color: rgba(255, 255, 255, .4);
+  color:rgb(144,85,162);
 }
 .nav-bar{
     position: fixed;
     display: block;
     display: inline-block;
-    background-color: white;
+    background-color:white;
     width: 100%;
     list-style-type: none;
     margin: 0px;
@@ -31,13 +31,16 @@ html
   font-weight: bold;
     text-decoration: none;
     display: block;̌̌
-    color: black;
     font-family:Arial;
     position: relative;
     padding: 0.5em 0;
   }
+
+.header_text{
+  color: black;
+}
   .nav-bar a:hover {
-    color:violet;
+    color:rgb(144,85,162);
   }
 
   .nav-bar a:hover:before {
@@ -49,7 +52,7 @@ html
     position: absolute;
     width: 0;
     height: .5px;
-    background-color: violet;
+    background-color: rgb(144,85,162);
     bottom: calc(-1px);
     right: 0;
     transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -66,7 +69,6 @@ html
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .secheadngs{
   font-size: 22px;
   text-transform: uppercase;
@@ -79,18 +81,16 @@ html
   .bgcolor{
     background-color: rgb(240, 238, 240);
   }
-
-.home_image{
-  width: 504px;
+.home_fles{
+  display: flex;
 }
+
+.font_size{
+    font-size: large;
+}
+
 .hometext{
-  position: absolute;
-  align-self: start;
-  padding: 3em;
-  width: auto;
-  height: auto;
-  left: 500px;
-  top: 90px;
+  padding: 7em;
 }
 .home_p{
   
@@ -123,13 +123,12 @@ html
   
 }
 .education_detail{
-  position: relative;
   width: 40%;
 }
 .education_summ{
   margin-top: 2%;
   display: flex;
-  position: relative;
+ 
   width: 50%;
 }
 
@@ -140,11 +139,9 @@ html
   display: flex;
 }
 .exp_detail{
-  position: relative;
   width: 30%;
 }
 .exp_summ{
-  position: relative;
   width: 50%;
   padding: 3em;
 }
