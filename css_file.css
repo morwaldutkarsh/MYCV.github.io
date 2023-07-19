@@ -1,0 +1,199 @@
+.body{
+  position: sticky;
+  padding: 0%;
+  margin: 0%
+}
+html
+{scroll-behavior: smooth;
+  transition: 2s;
+}
+.home{
+  color: rgba(255, 255, 255, .4);
+}
+.nav-bar{
+    position: fixed;
+    display: block;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    white-space: normal;
+}
+.nav-bar li{
+    display: inline-block;
+    min-width:15em;
+    margin: 1.5em 0.3em;
+}    
+.nav-bar a {
+  font-weight: bold;
+    text-decoration: none;
+    display: block;̌̌
+    color: black;
+    font-family:Arial;
+    position: relative;
+    padding: 0.5em 0;
+  }
+  .nav-bar a:hover {
+    color:violet;
+  }
+
+  .nav-bar a:hover:before {
+    left: 0;
+    width: 100%;
+  }
+  .nav-bar a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .5px;
+    background-color: violet;
+    bottom: calc(-1px);
+    right: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+.upper_of_heading{
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.headngs{
+  color: purple;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.secheadngs{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.sec_bg{
+  padding: 5%;
+}
+
+  .bgcolor{
+    background-color: rgb(240, 238, 240);
+  }
+
+.home_image{
+  width: 504px;
+}
+.hometext{
+  position: absolute;
+  align-self: start;
+  padding: 3em;
+  width: auto;
+  height: auto;
+  left: 500px;
+  top: 90px;
+}
+.home_p{
+  
+  width: 60%;
+}
+.expertise_section
+{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.expertise-div{
+  
+  flex :0 0 auto;
+  width: 50%;
+}
+.list-number{
+  margin-right: .5em;
+  color: purple;
+}
+.expertise_para{
+  margin-left: 2em;
+  margin-right: 17%;
+}
+
+
+.education_quali{
+  display: flex;
+  padding: 2em;
+  
+}
+.education_detail{
+  position: relative;
+  width: 40%;
+}
+.education_summ{
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.experience_q{
+  display: flex;
+}
+.exp_section{
+  display: flex;
+}
+.exp_detail{
+  position: relative;
+  width: 30%;
+}
+.exp_summ{
+  position: relative;
+  width: 50%;
+  padding: 3em;
+}
+.contact_div{
+  display: flex;
+}
+.link{
+ 
+  box-sizing: border-box;
+  box-shadow: inset;
+  text-align: center;
+  width: 25%;
+  padding: 2em;
+  margin-right: 2em;
+  background-color: white;
+}
+.link:hover{
+ 
+  background-color: rgb(144,85,162);
+  color: white;
+  outline: 4px solid black;
+  transition: .4s;
+
+}
+
+.footer{
+  
+  text-align: center !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+.name_center{
+  font-weight: bold;
+}
+.contact_list{
+  display: inline;
+}
+
+.contack_li{
+  position: relative;
+  display: inline-block;
+  padding: 1em; 
+}
+.cont_img:hover{
+  color: rgb(144,85,162);
+  
+}
