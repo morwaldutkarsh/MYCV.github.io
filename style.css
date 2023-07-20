@@ -185,7 +185,7 @@ nav a {
   flex-direction: row;
 }
 .font_size{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .home_image{
   margin-left: 90px;
@@ -219,6 +219,9 @@ nav .logo{
   .hometext{
     padding: 7em;
   }
+  .font_size{
+    font-size: 1rem;
+}
 }
 @media  (max-width:500px) {
   .hometext{
