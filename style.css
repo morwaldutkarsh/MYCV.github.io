@@ -185,7 +185,8 @@ nav a {
   flex-direction: row;
 }
 .font_size{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: .5rem;
 }
 .home_image{
   margin-left: 90px;
