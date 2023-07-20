@@ -183,6 +183,7 @@ nav a {
     font-size: 1rem;
 }
 .home_image{
+  margin-left: 90px;
   width: 100%;
   height: auto;
 }
@@ -192,7 +193,6 @@ nav a {
 
   }
 .home_image img{
-  margin: 90px;
   width: 100%;
   height: auto;
 }
