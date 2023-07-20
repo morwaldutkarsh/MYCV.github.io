@@ -157,12 +157,12 @@ nav a {
   border-bottom: solid  rgb(193, 149, 193);
   width: fit-content;
   color: purple;
-  font-size: 40px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 .secheadngs{
-  font-size: 22px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -183,9 +183,11 @@ nav a {
   flex-direction: row;
 }
 .font_size{
-    font-size: large;
+    font-size: 1rem;
 }
 .home_image{
+  margin-left: 13%;
+  margin-right: 13%;
   
 }
 .hometext{
@@ -258,7 +260,7 @@ nav a {
   box-sizing: border-box;
   text-align: center;
   width: 25%;
-  margin-right: 2em;
+  margin: .5rem;
   background-color: white;
 }
 .link:hover{
