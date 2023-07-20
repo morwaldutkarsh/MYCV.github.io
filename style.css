@@ -189,11 +189,11 @@ nav a {
 }
 @media screen and (max-width:500px){
   .home_image{
+    margin-left: 0px;
     padding: 0px 20px;
-
   }
 .home_image img{
-  margin-left: 90px;
+  margin-left: 0%;
   width: 100%;
   height: auto;
 }
