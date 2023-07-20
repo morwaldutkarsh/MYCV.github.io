@@ -43,9 +43,14 @@ nav a {
     display: block;
     margin-top: 1em;
     font-family:Arial;
-    padding: 0 1em 0 1em;
+    padding: 0 3em 0 3em;
     position: relative;
     
+  }
+  @media  (max-width:1500px) {
+    nav a{
+      padding: 0 1.5em 0 1.5em;
+    }
   }
 
 #toggle{
