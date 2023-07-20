@@ -47,7 +47,7 @@ nav a {
     position: relative;
     
   }
-  @media  (max-width:1500px) {
+  @media  (max-width:1590px) {
     nav a{
       padding: 0 1.5em 0 1.5em;
     }
@@ -208,11 +208,22 @@ nav .logo{
 }
 
 .hometext{
-  padding-left: 3rem;
+  padding-left: 0;
   padding-top: 7.5rem;
   padding-bottom: 5rem;
   padding-right: 5rem;
+  margin-right: 12%;
   
+}
+@media  (max-width:1650px) {
+  .hometext{
+    padding: 7em;
+  }
+}
+@media  (max-width:500px) {
+  .hometext{
+    padding: 3em;
+  }
 }
 .home_p{
   width: 60%;
