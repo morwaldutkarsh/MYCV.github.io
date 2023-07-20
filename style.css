@@ -201,7 +201,11 @@ nav .logo{
 }
 
 .hometext{
-  padding: 4.5rem;
+  padding-left: 3rem;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+  padding-right: 5rem;
+  
 }
 .home_p{
   width: 60%;
