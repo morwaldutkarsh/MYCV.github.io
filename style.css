@@ -192,6 +192,7 @@ nav a {
 
   }
 .home_image img{
+  margin: 90px;
   width: 100%;
   height: auto;
 }
