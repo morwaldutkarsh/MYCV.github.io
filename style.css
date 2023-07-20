@@ -14,7 +14,7 @@ html
 nav{
   position: fixed;
   background-color: white;
-  height: 70px;
+  height: 75px;
   width: 100%;
 }
 nav .logo{
@@ -47,47 +47,84 @@ nav a {
     position: relative;
     
   }
-#checkbtn{
-  float: right;
-  line-height: 70px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: black;
+
+#toggle{
+  position: absolute;
   display: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
-#check{
-  display: none;
+#toggle::before{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: rgb(144,85,162);
+  transform: translateY(-5px);
+  transition: .2s;
 }
-#check:checked~ul{
-  top: 70px;
-  left: 0%;
-  
+#toggle::after{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: rgb(144,85,162);
+  transform: translateY(5px);
+  transition: .2s;
 }
+#toggle.active::before{
+  transform: translateX(0px) rotate(45deg);
+}
+#toggle.active::after{
+  transform: translateX(0px) rotate(-45deg);
+}
+#toggle.active{
+  background: white;
+}
+#toggle:checked~ul{
+  top:0%;
+}
+#navbar{
+  transition: 1s;
+}
+#navbar.active{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background-color:white;
+}
+
+#navbar.active  a{
+  margin-left: .998rem;
+}
+
 @media(max-width: 1300px){
-  #checkbtn{
-    display: block;
+   #toggle{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
   }
-  nav ul{
+  #navbar{
     width: 100%;
-    padding: 2%;
-    height: fit-content;
-    background-color: white;
-    position: fixed;
-    top: -100%;
-    left: 0%;
-    transition: 1s;
-  }
-  nav ul li{
-    
-    display: block;
-    text-align: left;
-    margin-left: 60px;
-    line-height: 35px;
+    display: none;
   }
   nav ul li a{
     width: fit-content;
   }
 }
+
+
+
+
 
 .header_text{
   color: black;
@@ -131,9 +168,13 @@ nav a {
 }
 .sec_bg{
   padding: 5%;
+  
 }
-
+.nonbgcolor{
+  width: 100%;
+}
   .bgcolor{
+    width: 100%;
     background-color: rgb(240, 238, 240);
   }
   
@@ -154,9 +195,7 @@ nav a {
   width: 60%;
 }
 @media screen and (max-width:780px) {
-  .hometext{
-    padding: 7em;
-  }
+  
   .home_fles{
     display: flex;
     flex-direction: column;
@@ -217,10 +256,8 @@ nav a {
 .link{
  
   box-sizing: border-box;
-  box-shadow: inset;
   text-align: center;
   width: 25%;
-  padding: 2em;
   margin-right: 2em;
   background-color: white;
 }

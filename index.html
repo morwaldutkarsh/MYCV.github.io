@@ -3,38 +3,54 @@
     <head>
       <title>MY CV</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body class="body">
         
         <header class="header">
             <nav class="navv">
-              <input type="checkbox" id="check" name="" value=""> 
-              <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>  
               <label class="logo">MY PORTFOLIO</label>
-                <ul >
-                    <li >
-                        <a href="#home">HOME</a>    
+              <div id ="toggle" ></div>
+              <ul id="navbar" class="navul">
+                <li >
+                        <a  class="nav-link" href="#home">HOME</a>    
                     </li>
                     <li >
-                        <a href="#about">ABOUT</a>    
+                        <a class="nav-link" href="#about">ABOUT</a>    
                     </li>
                     <li >
-                        <a href="#EXPERTISE">EXPERTISE</a>    
+                        <a class="nav-link" href="#EXPERTISE">EXPERTISE</a>    
                     </li>
                     <li >
-                        <a href="#education">EDUCATION</a>    
+                        <a class="nav-link" href="#education">EDUCATION</a>    
                     </li>
                     <li >
-                        <a href="#experience">EXPERIENCE</a>    
+                        <a class="nav-link" href="#experience">EXPERIENCE</a>    
                     </li>
                     <li >
-                        <a href="#contact">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </header>
+
+        <script>
+          const header=document.getElementById('header');
+          const toggle=document.getElementById('toggle');
+          const navbar=document.getElementById('navbar');
+
+          document.onclick = function(e){
+              if(e.target.id !=="header" && e.target.id !=='toggle' && e.target.id !=='navbar'){
+                toggle.classList.remove('active');
+              navbar.classList.toggle('active');
+              }
+          }
+          
+          toggle.onclick= function(){
+              toggle.classList.toggle('active');
+              navbar.classList.toggle('active');
+          }
+      </script>
 
         <section class="nobgcolor" id="home" >
           <div class="home_fles">
