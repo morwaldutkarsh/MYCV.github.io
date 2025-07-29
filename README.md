@@ -1,1 +1,1 @@
-Link for my website --> https://morwaldutukarsh.github.io/MYCV.github.io/
+Link for my website --> https://morwaldutkarsh.github.io/MYCV.github.io/
